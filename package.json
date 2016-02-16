@@ -62,6 +62,7 @@
   "dependencies": {
     "most": "^0.18.0",
     "rx": "^4.0.7",
+    "rxjs": "^5.0.0-beta.2",
     "snabbdom-selector": "^0.3.2",
     "snabbdom-to-html": "^2.0.1"
   }
