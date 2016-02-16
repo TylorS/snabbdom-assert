@@ -1,6 +1,6 @@
 {
   "name": "snabbdom-assert",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A set of assertions for testing snabbdom vnodes",
   "main": "lib/index.js",
   "scripts": {
