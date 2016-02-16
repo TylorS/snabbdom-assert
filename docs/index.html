@@ -22,14 +22,14 @@
             type='text' />
           <div id='toc'>
               <a
+                href='#containsSelector'
+                class='block bold'>
+                containsSelector
+              </a>
+              <a
                 href='#containsVNode'
                 class='block bold'>
                 containsVNode
-              </a>
-              <a
-                href='#identical'
-                class='block bold'>
-                identical
               </a>
               <a
                 href='#identical'
@@ -42,10 +42,51 @@
       <div class='fix-margin-3'>
         <div class='px2'>
 <div class='py1'><section class='py2 clearfix'>
+  <h2 id='containsSelector' class='mt0'>
+    containsSelector<span class='gray'>(selector, vTree)</span>
+  </h2>
+    <p><a href='https://github.com/TylorS/snabbdom-assert/blob/6e993c4edcceafca2a29ea6661e797d64a6a69db/src/index.js#L183-L226'><code>src/index.js</code></a></p>
+  
+  
+  
+  
+  
+  <p>Assert whether a particular selector is contained in a vTree</p>
+
+    <h4>Parameters</h4>
+    <ul class='suppress-p-margin'>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
+ <strong>selector</strong>
+          :
+          <div class='force-inline'>
+            <p>the css selector to try and find</p>
+
+          </div>
+        </li>
+        <li>vNode
+ <strong>vTree</strong>
+          :
+          <div class='force-inline'>
+            <p>the vNode to test (can contain streams/observables)</p>
+
+          </div>
+        </li>
+    </ul>
+      <h4>Returns</h4>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
+</code>
+      :
+      <div class='force-inline'>
+        <p>promise resolves with an array of all of the matched
+vNodes, or rejects if the selector can not be found.</p>
+
+      </div>
+</section>
+</div><div class='py1'><section class='py2 clearfix'>
   <h2 id='containsVNode' class='mt0'>
     containsVNode<span class='gray'>(actual, expected)</span>
   </h2>
-    <p><a href='https://github.com/TylorS/snabbdom-assert/blob/c749115ea8bda630eba2f4a4ebac33a071851ede/src/index.js#L130-L171'><code>src/index.js</code></a></p>
+    <p><a href='https://github.com/TylorS/snabbdom-assert/blob/6e993c4edcceafca2a29ea6661e797d64a6a69db/src/index.js#L130-L171'><code>src/index.js</code></a></p>
   
   
   
@@ -88,7 +129,7 @@ or rejects if there is no match</p>
   <h2 id='identical' class='mt0'>
     identical<span class='gray'>(actual, expected)</span>
   </h2>
-    <p><a href='https://github.com/TylorS/snabbdom-assert/blob/c749115ea8bda630eba2f4a4ebac33a071851ede/src/index.js#L74-L116'><code>src/index.js</code></a></p>
+    <p><a href='https://github.com/TylorS/snabbdom-assert/blob/6e993c4edcceafca2a29ea6661e797d64a6a69db/src/index.js#L74-L116'><code>src/index.js</code></a></p>
   
   
   
@@ -123,47 +164,6 @@ or rejects if there is no match</p>
       <div class='force-inline'>
         <p>promise resolves with an object containing the <code>actual</code> and
 <code>expected</code> values if there is a match, or rejects if the vNodes do not match</p>
-
-      </div>
-</section>
-</div><div class='py1'><section class='py2 clearfix'>
-  <h2 id='identical' class='mt0'>
-    identical<span class='gray'>(selector, vTree)</span>
-  </h2>
-    <p><a href='https://github.com/TylorS/snabbdom-assert/blob/c749115ea8bda630eba2f4a4ebac33a071851ede/src/index.js#L183-L226'><code>src/index.js</code></a></p>
-  
-  
-  
-  
-  
-  <p>Assert whether a particular selector is contained in a vTree</p>
-
-    <h4>Parameters</h4>
-    <ul class='suppress-p-margin'>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>
- <strong>selector</strong>
-          :
-          <div class='force-inline'>
-            <p>the css selector to try and find</p>
-
-          </div>
-        </li>
-        <li>vNode
- <strong>vTree</strong>
-          :
-          <div class='force-inline'>
-            <p>the vNode to test (can contain streams/observables)</p>
-
-          </div>
-        </li>
-    </ul>
-      <h4>Returns</h4>
-      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Promise</a>
-</code>
-      :
-      <div class='force-inline'>
-        <p>promise resolves with an array of all of the matched
-vNodes, or rejects if the selector can not be found.</p>
 
       </div>
 </section>
