@@ -173,8 +173,8 @@ export function containsVNode(actual, expected) {
 /**
  * Assert whether a particular selector is contained in a vTree
  * @public
- * @method identical
- * @name identical
+ * @method containsSelector
+ * @name containsSelector
  * @param {string} selector - the css selector to try and find
  * @param {vNode} vTree - the vNode to test (can contain streams/observables)
  * @return {Promise} promise resolves with an array of all of the matched
